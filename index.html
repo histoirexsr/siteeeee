@@ -1,0 +1,44 @@
+---
+layout: index
+title: "momo!"
+---
+
+<!-- Loop output paged posts -->
+{% for post in paginator.posts %}
+<h2>
+  <a href="{{ post.url }}">
+    {{ post.title }}
+  </a> 
+  <div class="post-date">
+	<span class="glyphicon glyphicon-time"></span>
+	{{ post.date | date:"%Y-%m-%d" }}
+  </div>
+</h2>
+<hr>
+{{ post.excerpt }}
+	<p><h4><a href="{{ post.url }}">Read more &raquo;</a></h4></p>
+<hr>
+{% endfor %}
+
+<!-- Pager indicator -->
+<ul class="pager">
+  {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
+  <li class="previous">
+    <a href="/">
+      &larr; Previous (index.html)
+    </a>
+  </li>
+  {% else %}
+  <li class="previous">
+    <a href="/posts/page{{ paginator.previous_page }}/index.html">
+      &larr; Next (index.html)
+    </a>
+  </li>
+  {% endif %} {% endif %} {% if paginator.next_page %}
+  <li class="next">
+    <a href="/posts/page{{ paginator.next_page }}/index.html">
+      Next page &rarr; (index.html)
+    </a>
+  </li>
+  {% endif %}
+</ul>
