@@ -1,5 +1,5 @@
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
 permalink: /posts/:title.html
 excerpt_separator: "<!-- more -->"
 
@@ -7,17 +7,18 @@ github: histoirexsr
 author: "sofi"
 email: hihihihihi@gmail.com
 name: "chisin momo's site"
-url: "histoirexsr.github.io"
-baseurl: "/siteeeee"
+url: 
+domain: 
+baseurl: "/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site"
 all_categories: [
-["life", "Life","/posts/life.html"], 
-["program", "软件编程","/posts/program.html"],
-["web", "Web建站","/posts/web.html"], 
-["linux", "Linux相关","/posts/linux.html"],
-["read", "读书笔记","/posts/read.html"], 
-["other", "杂记","/posts/other.html"],
-["about", "关于","/about.html"],
-["gallery", "Gallery","/gallery/index.html"]
+["life", "Life","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/posts/life.html"], 
+["tech", "Wine Tech","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/posts/tech.html"],
+["note", "Tasting Notes","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/posts/note.html"], 
+["event", "Events!","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/posts/event.html"],
+["review", "Wine Review","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/posts/review.html"], 
+["other", "Others","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/posts/other.html"],
+["about", "About","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/about.html"],
+["gallery", "Gallery","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/gallery/index.html"]
 ]
 
 # ["no idea", "name in toolbar", "link to html"]
@@ -31,6 +32,3 @@ collections:
 
 gems:
  - jekyll-paginate
-
-theme: jekyll-theme-minimal
-

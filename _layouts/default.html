@@ -8,9 +8,9 @@
 	{% if page.tags.size > 0%}<meta name="keywords" content="{% for tag in page.tags %}{% if tag != "" %}{{ tag }}{% if forloop.index != page.tags.size %},{% endif %}{% endif %}{% endfor %}"/>{% endif %}
     <title>{{ page.title }} - {{ site.name }}</title>
     <!-- Bootstrap Core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet"/>
     <!-- Custom CSS -->
-    <link href="/css/blog.css" rel="stylesheet"/>
+    <link href="{{ site.baseurl }}/css/blog.css" rel="stylesheet"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
     queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://
@@ -22,9 +22,10 @@
       </script>
     <![endif]-->
         <!-- jQuery Version 1.11.0 -->
-    <script src="/js/jquery-1.11.0.js"> </script>
+    <script src="{{ site.baseurl }}/js/jquery-1.11.0.js"> </script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ site.baseurl }}/gallery/assets/css/font-awesome.min.css">
   </head>
   
   <body>
@@ -44,8 +45,8 @@
             <span class="icon-bar">
             </span>
           </button>
-          <a class="navbar-brand" href="/">
-            Home (default)
+          <a class="navbar-brand" href="{{ site.baseurl }}/index.html">
+            <i class="fa fa-home fa-lg"></i>
           </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,7 +69,8 @@
           <!-- Blog Categories Well -->
           <div class="well">
             <h4>
-              Cat (default)
+              Catagories
+              <i class="fa fa-file-text"></i>
             </h4>
             <div class="row">
               {% include categories.html %} 
@@ -78,7 +80,8 @@
 		  <!-- Blog Recent Well -->
           <div class="well">
             <h4>
-              Latest (default)
+              Latest 
+              <i class="fa fa-list"></i>
             </h4>
 			<div class="row">
               {% include recent_posts.html %} 

@@ -1,0 +1,60 @@
+---
+layout: post
+title:  Im happy!
+date:   2016-04-25 16:46:00 +0800
+categories: review
+featureimg: http://i.imgur.com/Oo3Isw0.jpg
+tags: [testing, happy, dafuq]
+---
+Download & Customize Easy
+Want to manage and host Font Awesome assets yourself? You can download, customize, and use the icons and default styling manually. Both CSS and CSS Preprocessor (Sass and Less) formats are included.
+
+<!-- more -->
+
+Download & Customize Easy
+Want to manage and host Font Awesome assets yourself? You can download, customize, and use the icons and default styling manually. Both CSS and CSS Preprocessor (Sass and Less) formats are included.
+
+ Download
+Using CSS
+Copy the entire font-awesome directory into your project.
+In the <head> of your html, reference the location to your font-awesome.min.css.
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+Check out the examples to start using Font Awesome!
+Using Sass or Less
+Use this method to customize Font Awesome 4.7.0 using LESS or SASS.
+
+Copy the font-awesome/ directory into your project.
+Open your project's font-awesome/less/variables.less or font-awesome/scss/_variables.scss and edit the @fa-font-path or $fa-font-path variable to point to your font directory.
+@fa-font-path:   "../font";
+ The font path is relative from your compiled CSS directory.
+
+Re-compile your LESS or SASS if using a static compiler. Otherwise, you should be good to go.
+Check out the examples to start using Font Awesome!
+or
+Advanced & Packages Pro
+LESS Ruby Gem
+Use the Official Font Awesome LESS Ruby Gem to easily get Font Awesome LESS into a Rails project. Generously maintained by @supercodepoet.
+
+Add this line to your application's Gemfile:
+gem 'font-awesome-less'
+And then execute:
+$ bundle
+Or install it yourself as:
+$ gem install font-awesome-less
+If you use Rails, add this to your e.g. application.less:
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+SASS Ruby Gem
+Use the Official Font Awesome SASS Ruby Gem to easily get Font Awesome SASS into a Rails or Compass project. Generously maintained by @supercodepoet.
+
+Add this line to your application's Gemfile:
+gem 'font-awesome-sass'
+And then execute:
+$ bundle
+Or install it yourself as:
+$ gem install font-awesome-sass
+If you use Rails, add this to your e.g. application.scss:
+
+@import "font-awesome-sprockets";
+@import "font-awesome";

@@ -21,8 +21,8 @@ title: Tags
                     {% for post in tag[1] %}
                         {
                             title: '{{ post.title }}',
-                            url: '{{ BASE_PATH }}{{ post.url }}',
-                            date: '{{ post.date | date: "%Y-%m-%d" }}'
+                            url: '{{ site.baseurl }}{{ post.url }}',
+                            date: '{{ post.date | date: "%Y.%m.%d" }}'
                         },
                     {% endfor %}
                 ]

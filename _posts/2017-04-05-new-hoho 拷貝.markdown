@@ -1,13 +1,18 @@
 ---
 layout: post
-title:  “Earrings! :o)”
-date:   2017-03-24 16:46:00 +0800
-categories: life
-featureimg: http://i.imgur.com/NnRSvC1.jpg
+title:  “HOHO! Trying new stuff here”
+date:   2017-04-05 13:46:00 +0800
+categories: tech
+tags: [tech, redwine, testing]
+featureimg: http://i.imgur.com/Oo3Isw0.jpg
 ---
 Oh well, Taobao is a good friend, there’re all sorts of nice stuff if you’re willing to dig them out. Many of those shops strive for success under the infamous copycat image China created.
 
 <!-- more -->
+
+###
+aG haha this is so fun
+###
 
 This time I got myself 2 pair of earrings, one is `handmade 925 silver button style earring`, the other is `hand painted enamel flower from Les Nerides` (idk if that’s authentic tho).
 
