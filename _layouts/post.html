@@ -2,14 +2,17 @@
 layout: default 
 --- 
 <!-- Navi -->
-{% for cat in site.all_categories %}{% if page.category == cat[0] %}<a href="/">Home</a>&nbsp;>&nbsp;<a href="{{cat[2]}}">{{cat[1]}}</a>&nbsp;>&nbsp;content{% endif %}{% endfor %}
+{% for cat in site.all_categories %}{% if page.category == cat[0] %}<a href="{{ site.baseurl }}/index.html">Home</a>&nbsp;>&nbsp;<a href="{{cat[2]}}">{{cat[1]}}</a>&nbsp;>&nbsp;content{% endif %}{% endfor %}
 <!-- Title -->
 <h2>{{ page.title }}</h2>
-{% if page.tags.size > 0%}<b>tags：</b>{% for tag in page.tags %}{% if tag != "" %}<a href="/tags.html#{{ tag }}"><i>{{ tag }}</i></a>{% if forloop.index != page.tags.size %}, {% endif %}{% endif %}{% endfor %}{% endif %}
+{% if page.tags.size > 0%}<b>Tags：</b>{% for tag in page.tags %}{% if tag != "" %}<a href="{{ site.baseurl }}/tags.html#{{ tag }}"><i>{{ tag }}</i></a>{% if forloop.index != page.tags.size %}, {% endif %}{% endif %}{% endfor %}{% endif %}
 <div class="post-date">
-	<span class="glyphicon glyphicon-time"></span>
-	{{ page.date | date:"%Y-%m-%d" }}
+	<i class="fa fa-calendar fa-fw"></i>
+	{{ page.date | date:"%Y.%m.%d" }}
 </div>
+{% if page.featureimg %}
+  <img src="{{ page.featureimg }}" style="width: 100%;" >
+{% endif %}
 <br/>
 
 <!-- content -->
@@ -20,14 +23,14 @@ layout: default
 <br/>
 <b>Quote this link for reblog!</b>
 <br/>
-<b>Link of this po:</b><a href="{{site.url}}{{page.url}}" title="{{page.name}}">{{site.url}}{{page.url}}</a>
+<b>Link of this po: </b><a href="{{site.baseurl}}{{page.url}}" title="{{page.name}}">{{site.baseurl}}{{page.url}}</a>
 
 <!-- next and previous -->
 <div style="margin-top:15px; margin-bottom:10px">
   {%if page.previous%}
   <span class="next">
-    Previous (post):
-    <a href="{{page.previous.url}}">
+    <i class="fa fa-chevron-circle-left"></i> Previous
+    <a href="{{page.previous.url | prepend: site.baseurl }}">
       {{page.previous.title}}
     </a>
   </span>
@@ -35,10 +38,10 @@ layout: default
   {%if page.next%}
   <div style="float:right">
   <span class="prev" >
-    Next (post):
-    <a href="{{page.next.url}}">
-      {{page.next.title}}
+    <a href="{{page.next.url | prepend: site.baseurl }}">
+      {{page.next.title}} 
     </a>
+    Next <i class="fa fa-chevron-circle-right"></i>
   </span>
   </div>
   {%endif%}

@@ -7,12 +7,12 @@
     <meta name="description" content="{{ page.title }} - {{ site.name }} - author:{{ site.author }}"/>
     <title>{{ page.title }} - {{ site.name }}</title>
     <!-- Bootstrap Core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet"/>
     <!-- Custom CSS -->
-    <link href="/css/blog.css" rel="stylesheet"/>
+    <link href="{{ site.baseurl }}/css/blog.css" rel="stylesheet"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
     queries -->
-    <link rel="stylesheet" href="gallery/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/gallery/assets/css/font-awesome.min.css">
     <!-- Font awesome icon css -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://
     -->
@@ -23,9 +23,9 @@
       </script>
     <![endif]-->
         <!-- jQuery Version 1.11.0 -->
-    <script src="/js/jquery-1.11.0.js"> </script>
+    <script src="{{ site.baseurl }}/js/jquery-1.11.0.js"> </script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
   </head>
   
   <body>
@@ -45,8 +45,8 @@
             <span class="icon-bar">
             </span>
           </button>
-          <a class="navbar-brand" href="/">
-            <i class="fa fa-camera-retro fa-lg"></i> fa-lgHome (index) <!-- homepage -->
+          <a class="navbar-brand" href="{{ site.baseurl }}/index.html">
+            <i class="fa fa-home fa-fw"></i><!-- homepage -->
           </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -69,7 +69,8 @@
           <!-- Blog Categories Well -->
           <div class="well">
             <h4>
-              Categories
+              Categories 
+              <i class="fa fa-file-text"></i>
             </h4>
             <div class="row">
               {% include categories.html %} 
@@ -79,7 +80,8 @@
 		  <!-- Blog Recent Well -->
           <div class="well">
             <h4>
-              Latest Posts (index)
+              Latest Posts 
+              <i class="fa fa-list"></i>
             </h4>
 			<div class="row">
               {% include recent_posts.html %} 
@@ -88,7 +90,8 @@
 		  <!-- Blog Links Well -->
           <div class="well">
             <h4>
-              Friendly Links (index)
+              Friendly Links 
+              <i class="fa fa-link" aria-hidden="true"></i>
             </h4>
             {% include friend_links.html %} 
           </div>

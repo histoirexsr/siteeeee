@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  “Earrings! :o)”
-date:   2017-03-24 16:46:00 +0800
-categories: life
-featureimg: http://i.imgur.com/NnRSvC1.jpg
+title:  New earrings! ;D
+date:   2017-04-05 16:46:00 +0800
+categories: event
+featureimg: http://photoblogstop.com/wp-content/uploads/2012/07/Sierra_HDR_Panorama_DFX8048_2280x819_Q40_wm_mini.jpg
 ---
 Oh well, Taobao is a good friend, there’re all sorts of nice stuff if you’re willing to dig them out. Many of those shops strive for success under the infamous copycat image China created.
 
