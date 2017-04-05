@@ -9,16 +9,16 @@ email: hihihihihi@gmail.com
 name: "chisin momo's site"
 url: 
 domain: 
-baseurl: "/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site"
+baseurl: "https://github.com/histoirexsr/siteeeee/gh-pages"
 all_categories: [
-["life", "Life","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/posts/life.html"], 
-["tech", "Wine Tech","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/posts/tech.html"],
-["note", "Tasting Notes","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/posts/note.html"], 
-["event", "Events!","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/posts/event.html"],
-["review", "Wine Review","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/posts/review.html"], 
-["other", "Others","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/posts/other.html"],
-["about", "About","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/about.html"],
-["gallery", "Gallery","/Users/sofifung/Documents/jekyll/jekyllnew_personal/_site/gallery/index.html"]
+["life", "Life","https://github.com/histoirexsr/siteeeee/gh-pages/posts/life.html"], 
+["tech", "Wine Tech","https://github.com/histoirexsr/siteeeee/gh-pages/posts/tech.html"],
+["note", "Tasting Notes","https://github.com/histoirexsr/siteeeee/gh-pages/posts/note.html"], 
+["event", "Events!","https://github.com/histoirexsr/siteeeee/gh-pages/posts/event.html"],
+["review", "Wine Review","https://github.com/histoirexsr/siteeeee/gh-pages/posts/review.html"], 
+["other", "Others","https://github.com/histoirexsr/siteeeee/gh-pages/posts/other.html"],
+["about", "About","https://github.com/histoirexsr/siteeeee/gh-pages/about.html"],
+["gallery", "Gallery","https://github.com/histoirexsr/siteeeee/gh-pages/gallery/index.html"]
 ]
 
 # ["no idea", "name in toolbar", "link to html"]
