@@ -4,19 +4,32 @@ title: "momo!"
 ---
 
 <!-- Loop output paged posts -->
+
 {% for post in paginator.posts %}
 <h2>
-  <a href="{{ post.url }}">
+  <a href="{{ post.url | prepend: site.baseurl }}">
     {{ post.title }}
   </a> 
   <div class="post-date">
-	<span class="glyphicon glyphicon-time"></span>
-	{{ post.date | date:"%Y-%m-%d" }}
+	<i class="fa fa-calendar" aria-hidden="true"></i>
+	{{ post.date | date:"%Y.%m.%d" }}
+  <p align="right">in <a href="{{site. baseurl}}/posts/{{ post.categories }}.html">
+  {{ post.categories }}
+  </a></p>
+
   </div>
 </h2>
-<hr>
+
+<div class="featureimg">
+{% if post.featureimg %}
+  <a href="{{ post.url | prepend: site.baseurl }}" ><div style="background-image: url('{{ post.featureimg }}');background-size: cover; background-position: center; width: 100%; height: 200px" >&nbsp;</div></a>
+{% endif %}
+</div>
+<p></p>
+
 {{ post.excerpt }}
-	<p><h4><a href="{{ post.url }}">Read more &raquo;</a></h4></p>
+	<p><h4 align="right"><a href="{{ post.url | prepend: site.baseurl }}">Read more <i class="fa fa-hand-o-right"></i>
+  </a></h4></p>
 <hr>
 {% endfor %}
 
@@ -24,20 +37,20 @@ title: "momo!"
 <ul class="pager">
   {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
   <li class="previous">
-    <a href="/">
-      &larr; Previous (index.html)
+    <a href="{{ site.baseurl }}/index.html">
+      <i class="fa fa-chevron-circle-left"></i> Previous
     </a>
   </li>
   {% else %}
   <li class="previous">
-    <a href="/posts/page{{ paginator.previous_page }}/index.html">
-      &larr; Next (index.html)
+    <a href="{{ site.baseurl }}/posts/page{{ paginator.previous_page }}/index.html">
+      <i class="fa fa-chevron-circle-right"></i> Next
     </a>
   </li>
   {% endif %} {% endif %} {% if paginator.next_page %}
   <li class="next">
-    <a href="/posts/page{{ paginator.next_page }}/index.html">
-      Next page &rarr; (index.html)
+    <a href="{{ site.baseurl }}/posts/page{{ paginator.next_page }}/index.html">
+      Next Page <i class="fa fa-chevron-circle-right"></i>
     </a>
   </li>
   {% endif %}
