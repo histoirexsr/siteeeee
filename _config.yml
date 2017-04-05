@@ -9,16 +9,16 @@ email: hihihihihi@gmail.com
 name: "chisin momo's site"
 url: 
 domain: 
-baseurl: "https://github.com/histoirexsr/siteeeee/gh-pages"
+baseurl: "https://histoirexsr.github.io/siteeeee"
 all_categories: [
-["life", "Life","https://github.com/histoirexsr/siteeeee/gh-pages/posts/life.html"], 
-["tech", "Wine Tech","https://github.com/histoirexsr/siteeeee/gh-pages/posts/tech.html"],
-["note", "Tasting Notes","https://github.com/histoirexsr/siteeeee/gh-pages/posts/note.html"], 
-["event", "Events!","https://github.com/histoirexsr/siteeeee/gh-pages/posts/event.html"],
-["review", "Wine Review","https://github.com/histoirexsr/siteeeee/gh-pages/posts/review.html"], 
-["other", "Others","https://github.com/histoirexsr/siteeeee/gh-pages/posts/other.html"],
-["about", "About","https://github.com/histoirexsr/siteeeee/gh-pages/about.html"],
-["gallery", "Gallery","https://github.com/histoirexsr/siteeeee/gh-pages/gallery/index.html"]
+["life", "Life","https://histoirexsr.github.io/siteeeee/posts/life.html"], 
+["tech", "Wine Tech","https://histoirexsr.github.io/siteeeee/posts/tech.html"],
+["note", "Tasting Notes","https://histoirexsr.github.io/siteeeee/posts/note.html"], 
+["event", "Events!","https://histoirexsr.github.io/siteeeee/posts/event.html"],
+["review", "Wine Review","https://histoirexsr.github.io/siteeeee/posts/review.html"], 
+["other", "Others","https://histoirexsr.github.io/siteeeee/posts/other.html"],
+["about", "About","https://histoirexsr.github.io/siteeeee/about.html"],
+["gallery", "Gallery","https://histoirexsr.github.io/siteeeee/gallery/index.html"]
 ]
 
 # ["no idea", "name in toolbar", "link to html"]
