@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/uh-testing.md
 hide_body: false
 fields:
 - type: textarea
