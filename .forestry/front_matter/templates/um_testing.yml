@@ -1,0 +1,19 @@
+---
+hide_body: false
+fields:
+- type: textarea
+  name: testing
+  label: testing
+  description: g9g what is this
+- type: boolean
+  default: false
+  label: setting
+  name: settingnwnwnww
+  description: um what is this too
+- type: datetime
+  name: w
+  label: datte
+  description: what date jek
+  config:
+    date_format: DD/MM/YYYY
+    required: true
