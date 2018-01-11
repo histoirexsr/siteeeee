@@ -3,19 +3,44 @@ pages:
 - _posts/uh-testing.md
 hide_body: false
 fields:
-- type: textarea
-  name: testing
-  label: testing
-  description: g9g what is this
-- type: boolean
-  default: false
-  label: setting
-  name: settingnwnwnww
-  description: um what is this too
+- type: select
+  name: layout
+  config:
+    source:
+      type: simple
+      path: 
+    required: true
+    options:
+    - post
+    - lol
+    - idk
+  label: layout
+  description: layout of the post
 - type: datetime
-  name: w
-  label: datte
-  description: what date jek
+  name: date
+  label: Date Time
+  description: Date to publish
   config:
     date_format: DD/MM/YYYY
     required: true
+- type: tag_list
+  name: tags
+  label: Tags
+  description: Add a tag
+- type: select
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - tech
+    - test
+    - lol
+    - hsppy
+  label: Category
+  name: categories
+  description: Category to post
+- type: file
+  name: featureimg
+  label: feature img
+  description: cover pic
