@@ -1,5 +1,6 @@
 ---
 pages:
+- _posts/wtf.md
 - _posts/uh-testing.md
 hide_body: false
 fields:
