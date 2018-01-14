@@ -16,6 +16,7 @@ fields:
     - idk
   label: layout
   description: layout of the post
+  default: post
 - type: datetime
   name: date
   label: Date Time
@@ -40,6 +41,7 @@ fields:
   label: Category
   name: categories
   description: Category to post
+  default: tech
 - type: file
   name: featureimg
   label: feature img
