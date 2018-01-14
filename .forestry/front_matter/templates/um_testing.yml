@@ -1,6 +1,6 @@
 ---
 pages:
-- _posts/hello-testing.md
+- _posts/2018-01-14-hello-testing.md
 hide_body: false
 fields:
 - type: select
