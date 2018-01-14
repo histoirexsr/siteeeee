@@ -1,6 +1,4 @@
 ---
-pages:
-- _posts/2018-01-11-uh-testing.md
 hide_body: false
 fields:
 - type: select
