@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/hello-testing.md
 hide_body: false
 fields:
 - type: select
